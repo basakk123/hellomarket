@@ -19,13 +19,15 @@ public class User {
     private Long id;
     @Column(unique = true)
     private String email;
+    private String username;
     private String password;
     private String phoneNumber;
 
     @Builder
-    public User(Long id, String email, String password, String phoneNumber) {
+    public User(Long id, String email, String username, String password, String phoneNumber) {
         this.id = id;
         this.email = email;
+        this.username = username;
         this.password = password;
         this.phoneNumber = phoneNumber;
     }
