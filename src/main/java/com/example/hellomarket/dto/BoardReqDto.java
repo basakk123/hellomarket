@@ -18,7 +18,7 @@ public class BoardReqDto {
             return Board.builder()
                     .title(title)
                     .content(content)
-                    .user(sessionUser.toEntity())
+                    .users(sessionUser.toEntity())
                     .build();
         }
     }

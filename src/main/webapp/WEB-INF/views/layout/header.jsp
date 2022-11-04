@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="ko">
 
         <head>
             <title>HelloMarket</title>
@@ -13,6 +13,7 @@
             <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
             <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+            <link href="/css/header.css" rel="stylesheet">
         </head>
 
         <body>
@@ -27,12 +28,12 @@
 
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                         <li><a href="#" class="nav-link px-2 link-secondary">HelloMarket</a></li>
-                        <li><a href="#" class="nav-link px-2 link-dark">거래게시판</a></li>
+                        <li><a href="/board" class="nav-link px-2 link-dark">거래게시판</a></li>
                     </ul>
 
                     <div class="col-md-3 text-end">
                         <button type="button" class="btn btn-outline-primary me-2">로그인</button>
-                        <button type="button" class="btn btn-primary">회원가입</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href = '/join'">회원가입</button>
                     </div>
                 </header>
             </div>

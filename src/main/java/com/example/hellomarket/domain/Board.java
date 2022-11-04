@@ -32,19 +32,20 @@ public class Board {
 
     // FK가 만들어짐. user_id
     @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
+    private Users users;
 
     // 조회를 위해서만 필요함
     @OneToMany(mappedBy = "board", fetch = FetchType.LAZY)
     private List<Comments> comments = new ArrayList<>();
 
     @Builder
-    public Board(Long id, String title, String content, Timestamp timestampField, User user, List<Comments> comments) {
+    public Board(Long id, String title, String content, Timestamp timestampField, Users users,
+            List<Comments> comments) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.timestampField = timestampField;
-        this.user = user;
+        this.users = users;
         this.comments = comments;
     }
 

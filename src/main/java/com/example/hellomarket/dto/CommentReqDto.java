@@ -19,7 +19,7 @@ public class CommentReqDto {
             return Comments.builder()
                     .content(content)
                     .board(board)
-                    .user(sessionUser.toEntity())
+                    .users(sessionUser.toEntity())
                     .build();
         }
     }

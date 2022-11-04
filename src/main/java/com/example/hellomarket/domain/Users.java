@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 @Entity
-public class User {
+public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,7 +24,7 @@ public class User {
     private String phoneNumber;
 
     @Builder
-    public User(Long id, String email, String username, String password, String phoneNumber) {
+    public Users(Long id, String email, String username, String password, String phoneNumber) {
         this.id = id;
         this.email = email;
         this.username = username;

@@ -21,16 +21,16 @@ public class Comments {
     private String content;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
+    private Users users;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Board board;
 
     @Builder
-    public Comments(Long id, String content, User user, Board board) {
+    public Comments(Long id, String content, Users users, Board board) {
         this.id = id;
         this.content = content;
-        this.user = user;
+        this.users = users;
         this.board = board;
     }
 

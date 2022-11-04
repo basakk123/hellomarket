@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.w-100 {
+    width: 50% !important;
+}
+
+.fw-normal {
+    text-align: center;
+    margin: 180px auto;
+}
+
+.btn-join {
+    display: block;
+    margin: 30px auto 180px auto;
+}

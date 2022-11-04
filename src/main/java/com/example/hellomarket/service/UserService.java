@@ -2,7 +2,7 @@ package com.example.hellomarket.service;
 
 import org.springframework.stereotype.Service;
 
-import com.example.hellomarket.domain.UserRepository;
+import com.example.hellomarket.domain.UsersRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -10,6 +10,6 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class UserService {
 
-    private final UserRepository userRepository;
+    private final UsersRepository userRepository;
 
 }

@@ -1,6 +1,6 @@
 package com.example.hellomarket.dto;
 
-import com.example.hellomarket.domain.User;
+import com.example.hellomarket.domain.Users;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,12 +11,12 @@ public class SessionUser {
     private Long id;
     private String username;
 
-    public SessionUser(User user) {
+    public SessionUser(Users user) {
         this.id = user.getId();
         this.username = user.getUsername();
     }
 
-    public User toEntity() {
-        return User.builder().id(id).username(username).build();
+    public Users toEntity() {
+        return Users.builder().id(id).username(username).build();
     }
 }

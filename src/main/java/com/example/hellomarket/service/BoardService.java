@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.example.hellomarket.domain.Board;
 import com.example.hellomarket.domain.BoardRepository;
-import com.example.hellomarket.domain.UserRepository;
+import com.example.hellomarket.domain.UsersRepository;
 import com.example.hellomarket.dto.BoardReqDto.BoardSaveReqDto;
 import com.example.hellomarket.dto.BoardReqDto.BoardUpdateReqDto;
 import com.example.hellomarket.dto.BoardRespDto.BoardAllRespDto;
@@ -27,7 +27,7 @@ import lombok.RequiredArgsConstructor;
 public class BoardService {
 
     private final BoardRepository boardRepository;
-    private final UserRepository userRepository;
+    private final UsersRepository userRepository;
 
     @Transactional
     public BoardSaveRespDto save(BoardSaveReqDto boardSaveReqDto) {
